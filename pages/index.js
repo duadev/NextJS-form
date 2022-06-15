@@ -23,7 +23,7 @@ export default function App() {
     Object.entries(query).forEach(([key, value]) => {
       formData.append(key, value);
     });
-    fetch("https://getform.io/f/3125f42f-8449-4276-99da-188dcf807c40", {
+    fetch("https://getform.io/f/315f42f-188d07c40", {
       method: "POST",
       body: formData
     }).then(() => setQuery({ name: "", email: "", message: "" }));
